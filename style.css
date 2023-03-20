@@ -12,7 +12,13 @@
     --verde: rgb(70,125,77);
     --aqua:rgb(67, 197, 186);
     --gris:#d7d7d7;
+    --azulado:rgb(9, 93, 119);
 
+}
+
+
+body{
+    background-color: var(--aqua);
 }
 
 /* header */
@@ -50,12 +56,13 @@
 
     .container{
         width: 100%;
-        height: 500px;
+        height: 800px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
         padding: 100px;
-        background: linear-gradient(0deg, rgba(178,247,237,1) 50%, rgba(213,217,217,1) 92%);
+        background: linear-gradient(0deg, rgb(77,197,186) 50%, rgba(213,217,217,1) 92%);
         
     }
 
@@ -63,9 +70,11 @@
     .container__titulo{
         
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         gap: 50px;
         align-items: center;
+        text-align: center;
 
     }
 
@@ -77,7 +86,141 @@
         font-size: 20px;
     }
 
+    .container__titulo a{
+        text-decoration: none;
+        color: var(--azulado);
+        font-size: 25px;
+        
+
+    }
+
+    .container__titulo a:hover{
+        color: var(--gris) ;
+    }
+
     .portada img{
         width: 400px;
         height: 400px;
     }
+
+
+    /* productos */
+
+
+
+     h2{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        color: white;
+        margin-top: 30px;
+     }
+
+    .container__productos{
+        width: 100%;
+        height: 600px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 300px;
+        padding: 5% 15%;
+        gap: 10px;
+        
+    
+    }
+
+
+    .productos__mujer{
+        background-image: url(./imagenes/zapatosmujer.jpg);
+        background-repeat: no-repeat;
+        background-position:initial;
+        background-size: cover;
+        width: 100%;
+        height:100%;
+        grid-column-start:1 ;
+        grid-column-end:2 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productos__niños{
+        background-image: url(./imagenes/zapatosniños.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+        width: 100%;
+        height:100%;
+        grid-column-start: 2 ;
+        grid-column-end:3 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .productos__hombres{
+        background-image: url(./imagenes/zapatoshombres.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+        width: 100%;
+        height:100%;
+        grid-column-start: 3 ;
+        grid-column-end:4 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+
+    .productos__promociones{
+        grid-column-start: 1 ;
+        grid-column-end:4 ;
+
+    }
+
+
+   .productos__mujer img{
+    width: 100%;
+    height: 300px;
+   }
+
+   .productos__hombres img{
+    width: 100%;
+    height: 300px;
+   }
+
+   .productos__niños img{
+    width: 100%;
+    height: 300px;
+   }
+
+
+   .productos__promociones{
+    width: 100%;
+    height: 300px;
+    background-color: var(--azulado);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .productos__promociones img{
+    width: 100px;
+    height: 100px;
+}
+
+ h3{
+    font-size: 50px;
+    color: var(--aqua);
+}
+
+
+
+    
+    
+    
+   
