@@ -56,6 +56,11 @@ body{
     font-size: 20px;
 }
 
+.lista__items img{
+    height: 30px;
+    width: 30px;
+}
+
 
 .ingresar__container{
     display: flex; 
@@ -80,6 +85,11 @@ body{
 .menu{
     display: none;
 }
+
+
+
+
+
 
 
 
@@ -161,7 +171,7 @@ body{
 
     .container__productos{
         width: 100%;
-        height: 700px;
+        height: 800;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 300px;
@@ -305,6 +315,20 @@ body{
         align-items: center;
         gap: 10px;
     }
+
+    .form input{
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        border: solid 2px var(--gris);
+
+    }
+    textarea{
+        width: 180px;
+        height: 100px;
+        border-radius: 10px;
+        border: solid 2px var(--gris);
+    }
     .redes{
 
         display: flex;
@@ -423,10 +447,110 @@ body{
 
 @media (max-width: 992px) {
 
-    .menu{display: flex;
+    .menu {display: flex;
 
     }
 .lista{
     display: none;
 }
+#menu__toggle{
+    display: none;
+}
+.imgmenu{
+    width: 100px;
+    height: 50px;
+
+}
+
+.menu__lista{
+    height: auto;
+    display: block;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position:absolute;
+    align-content: center;
+    
+}
+
+
+}
+
+@media (max-width: 768px) {
+    .container__productos{
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .contacto{
+        gap: 50px;
+    }
+
+    .container__productos{
+        height: 1000px;
+    }
+    .productos__mujer {
+        width: 100%;
+        height: 200px;
+       }
+       .productos__hombres{
+        width: 100%;
+        height: 200px;
+       }
+       .productos__niños{
+        width: 100%;
+        height: 200px;
+       }
+       .productos__promociones{
+        width: 100%;
+        height: 200px;
+        
+       }
+}
+
+@media (max-width: 576px) {
+    .ingresar__container{
+        display: flex;
+        flex-direction: column;
+       width: 100px;
+       height: 50px;
+    }
+    .ingresar__container a{
+        width: 80px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .contacto{
+        height: 1000px;
+    }
+
+
+    .portada img{
+        width: 200px;
+        height: 200px;
+    }
+
+    h2{
+        padding-top: 10px;
+    }
+       h3{
+        font-size: 30px;
+       }
+
+       #sobrenosotros p{
+        font-size: 20px;
+       }
+
+  
+       .redes__info{
+        width: 100%;
+        height: 150px;
+       }
+
+
+  
 }
