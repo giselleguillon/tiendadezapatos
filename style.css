@@ -280,6 +280,13 @@ body{
     gap: 50px;
 
 }
+.boton{
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
 
 .productos{
     width: 250px;
@@ -452,7 +459,9 @@ body{
     transition: 0.5s;
    }
    
-   
+   .hidden {
+    visibility: hidden;
+   }
 
    /* section footer */
 

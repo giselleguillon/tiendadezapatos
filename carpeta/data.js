@@ -35,3 +35,23 @@ const productos = [
     }
 
 ];
+
+const divideProductsInParts = (size) => {
+    let productList = [];
+    for (let index = 0; index < productos.length; index += size) {
+        productList.push(productos.slice( index, index + size));
+
+    }
+    return productList;
+};
+
+console.log (divideProductsInParts(2));
+
+
+const appState = {
+    products: divideProductsInParts(2),
+    currentProductsIndex: 0,
+    productsinit: divideProductsInParts(2).length,
+    activeFilter: null,
+};
+
