@@ -36,7 +36,7 @@
                 <label for="menu__toggle">
                     <img src="./imagenes/menu.png" alt="" class="imgmenu">
                 </label>
-                <input type="text" id="menu__toggle">
+                <input  id="menu__toggle">
                 <ul class="menu__lista">
                     <li class="lista__items"><a href="index.html">Inicio</a></li>
                     <li class="lista__items"><a href="#productos">Productos</a></li>
@@ -68,22 +68,27 @@
 
         <section id="productos">
             <h2>Shop</h2>
-            <div class="container__productos">
-                <div class="productos__mujer"><a href="">
-                        <h3>Mujeres</h3>
-                    </a></div>
-                <div class="productos__niños"><a href="">
-                        <h3>Niños</h3>
-                    </a></div>
-                <div class="productos__hombres"><a href="">
-                        <h3>Hombres</h3>
-                    </a></div>
-                <div class="productos__promociones">
-                    <img src="./imagenes/portada.png" alt="">
-                    <a href="">
-                        <h3>Promociones</h3>
-                    </a>
 
+            <!-- categorias -->
+            <div class="container__productos">
+               <div class="productos__mujer" >
+                      <button class="category"data-category="mujer" > Mujeres </button>
+                        
+                </div>
+                <div class="productos__niños" >
+                     <button class="category" data-category="niños" >Niños</button>
+                        
+                </div>
+                <div class="productos__hombres" >
+                        <button class="category"data-category="hombre">Hombres</button>
+                </div>
+                <div class="productos__promociones" class="category">
+                    <img src="./imagenes/portada.png" alt="">
+                    <a href=""> 
+                        <h3>Promociones</h3> 
+                    </a> 
+
+                    
                 </div>
             </div>
 

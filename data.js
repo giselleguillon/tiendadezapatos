@@ -80,13 +80,6 @@ const productos = [
         cardImg: "./imagenes/zapatillascanada.png",
     },
 
-    {
-        id: 11,
-        name: "Zapatillas Suecia ",
-        bid: 200,
-        category: "hombre",
-        cardImg: "./imagenes/zapatillasuecia.jpg",
-    }
 
 ];
 

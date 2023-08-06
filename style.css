@@ -91,8 +91,6 @@ body{
 
 
 
-
-
     /* portada */
 
 
@@ -157,7 +155,11 @@ body{
 
     /* productos */
 
-
+    button{
+        border: 0;
+        background-color: inherit;
+        
+     }
 
      h2{
         display: flex;
@@ -179,6 +181,14 @@ body{
         
     
     }
+
+   
+   
+   
+
+   
+   
+   
 
 
     .productos__mujer{
@@ -264,8 +274,11 @@ body{
     width: 100px;
     height: 100px;
 }
+h3{ font-size: 50px;
+    color: var(--aqua);
 
- h3{
+}
+.category{
     font-size: 50px;
     color: var(--aqua);
 }
@@ -616,7 +629,7 @@ body{
     display: none;
 }
 #menu__toggle{
-    display: none;
+    display:none;
 }
 .imgmenu{
     width: 30px;
